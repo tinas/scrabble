@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.primary {
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  font-weight: 700;
+  color: white;
+  border: 1px solid $green;
+  border-radius: $rounded-medium;
+  background-color: rgba($color: $green, $alpha: 0.7);
+  transition-duration: $transition-duration;
+  transition-property: background-color;
+
+  &:hover {
+    background-color: $green;
+  }
+}

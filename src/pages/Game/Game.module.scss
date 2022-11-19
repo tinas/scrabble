@@ -1,0 +1,77 @@
+@import '../../styles/variables';
+
+.title {
+  color: $navy;
+  text-align: center;
+  font-weight: $font-black;
+}
+
+.board {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 9rem;
+  padding-top: 1.5rem;
+  background-color: $orange-light;
+
+  &-log {
+    position: absolute;
+    top: 0;
+    margin-top: 0.5rem;
+    font-weight: $font-book;
+  }
+}
+
+.scoreBoard {
+  display: grid;
+  grid-template-columns: 1fr 8rem 1fr;
+  column-gap: 4rem;
+  margin: 2rem 4rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.microphone {
+  padding: 1.5rem;
+  background-color: $white;
+  border-radius: $rounded-full;
+  line-height: 0.8;
+
+  svg {
+    font-size: 4rem;
+  }
+
+  &--listening {
+    color: $red;
+  }
+}
+
+.timer {
+  font-size: 6rem;
+  font-weight: $font-black;
+}
+
+.progress {
+  text-align: center;
+
+  &-label {
+    font-weight: $font-book;
+    margin-bottom: 0.5rem;
+  }
+
+  &-value {
+    font-weight: $font-black;
+    font-size: 1.5rem;
+  }
+}
+
+.restartButton {
+  width: 15rem;
+}

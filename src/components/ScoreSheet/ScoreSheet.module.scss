@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+
+.playerName {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: $font-black;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.words {
+  overflow: auto;
+  padding: 1.5rem;
+  height: 20rem;
+  font-size: 1.5rem;
+  font-weight: $font-black;
+  border: 2px solid;
+  border-radius: $rounded-normal;
+  background-color: $white;
+  box-shadow: $shadow;
+  list-style: none;
+}
+
+.word {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  border: 1px solid;
+  border-radius: $rounded-medium;
+
+  & + .word {
+    margin-top: 0.5rem;
+  }
+
+  &--empty {
+    border: 0;
+    font-style: italic;
+    opacity: $opacity;
+    font-size: 1rem;
+  }
+}
+
+.primary {
+  &,
+  .word {
+    color: $navy;
+    border-color: $navy;
+  }
+}
+
+.secondary {
+  &,
+  .word {
+    color: $green;
+    border-color: $green;
+  }
+}
+
+.error {
+  &,
+  .word {
+    color: $red;
+    border-color: $red;
+  }
+}

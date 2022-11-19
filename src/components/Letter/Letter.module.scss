@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $font-black;
+  font-size: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+  color: $white;
+  border: 1px solid;
+  border-radius: $rounded-small;
+}
+
+.primary {
+  border-color: $blue;
+  background-color: rgba($color: $blue, $alpha: 0.3);
+}
+
+.secondary {
+  border-color: $green;
+  background-color: rgba($color: $green, $alpha: 0.3);
+}
+
+.error {
+  border-color: $red;
+  background-color: rgba($color: $red, $alpha: 0.3);
+}

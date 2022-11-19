@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  margin-top: 4rem;
+}
+
+.playerName {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 20rem;
+}
+
+.gamerules {
+  padding: 1rem;
+  border: 2px solid $orange;
+  border-radius: $rounded-normal;
+  background-color: $orange-light;
+
+  &-heading {
+    font-weight: $font-book;
+  }
+
+  &-list {
+    padding-left: 1rem;
+
+    &-item {
+      line-height: 2rem;
+    }
+  }
+}
